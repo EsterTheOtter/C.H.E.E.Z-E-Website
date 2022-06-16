@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Playground for different form input element types... Codename: Super-Aggressive Rating Form -->
+
+<html>
+    <div class="head">
+        <head>
+            <title>Requests | C.H.E.E.Z/E</title>
+            <link href="./css/stylesheet.css" rel="stylesheet">
+        </head>
+    </div>
+    <div class="content">
+        <body>
+            <div class="navigation">
+                <a href="./index.html">Home</a>
+            </div>
+            <div class="form">
+                <label for="l_input">Have an idea or sugguestion? Share it here!</label>
+                <form action="./" method="POST">
+                    <section class="sugguestion">
+                        <h1>Sugguestions:</h1>
+                        <input type="text" name="Menu input" id="l_input">
+                    </section>
+                    <hr>
+                    <section class="rating">
+                        <lable for="l_rating">How would you rate your visit?</lable>
+                        <br>
+                        <span>Terrible</span>
+                        <input type="range" name="l_rating" id="l_rating" min="0" max="10" step="1">
+                        <span>Great</span>
+                    </section>
+                    <hr>
+                    <section class="rating_2">
+                        <label for="particular">What in general could be improved?</label>
+                        <br
+                        <label for="display_layout">Display/Layout</label>
+                        <input type="checkbox" name="particular" id="display_layout" value="Display/Layout">
+                        <label for="controls">Controls</label>
+                        <input type="checkbox" name="particular" id="controls" value="Controls">
+                        <label for="accessability">Accessability</label>
+                        <input type="checkbox" name="particular" id="accessability" value="Accessability">
+                        <label for="other">Other</label>
+                        <input type="checkbox" name="particular" id="other" value="other">
+                    </section>
+                    <hr>
+                    <section class="drop_menu">
+                        <label for="reference">How did you hear about us?</label>
+                        <select name="reference" id="reference">
+                            <option value="fam_friend">Family/Friends</option>
+                            <option value="google">Google</option>
+                            <option value="fb">Facebook</option>
+                            <option value="yt">Youtube</option>
+                            <option value="ad">Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </section>
+                    <hr>
+                    <section class="rating_fin">
+                        <span>Did you enjoy your experience?</span>
+                        <input type="radio" name="yes_no" value="yes" id="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="yes_no" value="no" id="no">
+                        <label for="no">No</label>
+
+                    </section>
+                </form>
+                <form action="./" method="POST">
+                    
+                </form>
+            </div>
+        </body>
+    </div>
+</html>
