@@ -51,7 +51,7 @@ a:hover {
     color: darkorange;
 }
 
-.heading-background {
+div.heading-background h2 {
     background-color: maroon;
 }
 
@@ -78,6 +78,9 @@ table tr {
 h1,
 .heading-background {
 
+}
+
+.form hr {
 }
 
 }
