@@ -2,93 +2,89 @@
 <!-- Playground for different form input element types... Codename: Super-Aggressive Rating Form -->
 
 <html>
-    <div class="head">
-        <head>
-            <title>Requests | C.H.E.E.Z/E</title>
-            <link href="./css/stylesheet.css" rel="stylesheet">
-        </head>
-    </div>
-    <div>
-        <body class="content">
-            <nav>
-                <a href="./index.html">Home</a>
-            </nav>
-            <div class="form">
+    <head>
+        <title>Requests | C.H.E.E.Z/E</title>
+        <!--<link href="./css/stylesheet.css" rel="stylesheet">-->
+    </head>
+    <body class="content">
+        <nav>
+            <a href="./index.html">Home</a>
+        </nav>
+        <main class="form">
+            <form action="./submission.html" method="POST">
                 <label for="l_input">Have an idea or sugguestion? Share it here!</label>
-                <form action="./submission.html" method="POST">
-                    <section class="sugguestion">
-                        <h1>Sugguestions:</h1>
-                        <input type="text" name="Menu input" id="l_input">
-                    </section>
-                    <hr>
-                    <section class="rating">
-                        <lable for="l_rating">How would you rate your visit?</lable>
-                        <br>
-                        <span>Terrible</span>
-                        <input type="range" name="l_rating" id="l_rating" min="0" max="10" step="1">
-                        <span>Great</span>
-                    </section>
-                    <hr>
-                    <section class="rating_2">
-                        <label for="particular">What in general could be improved?</label>
-                        <br
-                        <label for="display_layout">Display/Layout</label>
-                        <input type="checkbox" name="particular" id="display_layout" value="Display/Layout">
-                        <label for="controls">Controls</label>
-                        <input type="checkbox" name="particular" id="controls" value="Controls">
-                        <label for="accessability">Accessability</label>
-                        <input type="checkbox" name="particular" id="accessability" value="Accessability">
-                        <label for="other">Other</label>
-                        <input type="checkbox" name="particular" id="other" value="other">
-                    </section>
-                    <hr>
-                    <section class="drop_menu">
-                        <label for="reference">How did you hear about us?</label>
-                        <select name="reference" id="reference">
-                            <option value="fam_friend">Family/Friends</option>
-                            <option value="google">Google</option>
-                            <option value="fb">Facebook</option>
-                            <option value="yt">Youtube</option>
-                            <option value="ad">Advertisement</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </section>
-                    <hr>
-                    <section>
-                        <span></span>
-                        <label for="experience">How would you describe the experience?</label>
-                        <input type="text" name="experience" list="experiences" id="experience" placeholder="It was Fantastic!">
-                        <datalist id="experiences">
-                            <option value="fantastic">It was fantastic!</option>
-                            <option value="great">It was great!</option>
-                            <option value="ok">It was okay.</option>
-                            <option value="meh">It was meh...</option>
-                            <option value="bad">It was bad.</option>
-                            <option value="terrible">It was terrible</option>
-                            <option value="none">No opinion.</option>
-                        </datalist>
-                    </section>
-                    <hr>
-                    <section class="rating_fin">
-                        <span>Did you enjoy your experience?</span>
-                        <input type="radio" name="yes_no" value="yes" id="yes">
-                        <label for="yes">Yes</label>
-                        <input type="radio" name="yes_no" value="no" id="no">
-                        <label for="no">No</label>
-                    </section>
-                    <hr>
-                    <section class="sugguestions_fin">
-                        <span>If you have any more sugguestions on how we can improve the site, feel free to type them up here!</span>
-                        <label for="">Have more sugguestions?</label>
-                        <br>
-                        <textarea id="more_sugg" name="more_sugg" rows="5" cols="30" placeholder="Please type here..."></textarea>
-                    </section>
-                    <hr>
-                    <section>
-                        <input type="submit" value="Submit">
-                    </section>
-                </form>
-            </div>
-        </body>
-    </div>
+                <section class="sugguestion">
+                    <h1>Sugguestions:</h1>
+                    <input type="text" name="Menu input" id="l_input">
+                </section>
+                <hr>
+                <section class="rating">
+                    <lable for="l_rating">How would you rate your visit?</lable>
+                    <br>
+                    <span>Terrible</span>
+                    <input type="range" name="l_rating" id="l_rating" min="0" max="10" step="1">
+                    <span>Great</span>
+                </section>
+                <hr>
+                <section class="rating_2">
+                    <label for="particular">What in general could be improved?</label>
+                    <br
+                    <label for="display_layout">Display/Layout</label>
+                    <input type="checkbox" name="particular" id="display_layout" value="Display/Layout">
+                    <label for="controls">Controls</label>
+                    <input type="checkbox" name="particular" id="controls" value="Controls">
+                    <label for="accessability">Accessability</label>
+                    <input type="checkbox" name="particular" id="accessability" value="Accessability">
+                    <label for="other">Other</label>
+                    <input type="checkbox" name="particular" id="other" value="other">
+                </section>
+                <hr>
+                <section class="drop_menu">
+                    <label for="reference">How did you hear about us?</label>
+                    <select name="reference" id="reference">
+                        <option value="fam_friend">Family/Friends</option>
+                        <option value="google">Google</option>
+                        <option value="fb">Facebook</option>
+                        <option value="yt">Youtube</option>
+                        <option value="ad">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </section>
+                <hr>
+                <section>
+                    <span></span>
+                    <label for="experience">How would you describe the experience?</label>
+                    <input type="text" name="experience" list="experiences" id="experience" placeholder="It was Fantastic!">
+                    <datalist id="experiences">
+                        <option value="fantastic">It was fantastic!</option>
+                        <option value="great">It was great!</option>
+                        <option value="ok">It was okay.</option>
+                        <option value="meh">It was meh...</option>
+                        <option value="bad">It was bad.</option>
+                        <option value="terrible">It was terrible</option>
+                        <option value="none">No opinion.</option>
+                    </datalist>
+                </section>
+                <hr>
+                <section class="rating_fin">
+                    <span>Did you enjoy your experience?</span>
+                    <input type="radio" name="yes_no" value="yes" id="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="yes_no" value="no" id="no">
+                    <label for="no">No</label>
+                </section>
+                <hr>
+                <section class="sugguestions_fin">
+                    <span>If you have any more sugguestions on how we can improve the site, feel free to type them up here!</span>
+                    <label for="">Have more sugguestions?</label>
+                    <br>
+                    <textarea id="more_sugg" name="more_sugg" rows="5" cols="30" placeholder="Please type here..."></textarea>
+                </section>
+                <hr>
+                <section>
+                    <input type="submit" value="Submit">
+                </section>
+            </form>
+        </main>
+    </body>
 </html>

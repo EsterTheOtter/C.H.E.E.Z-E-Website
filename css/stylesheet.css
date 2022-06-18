@@ -3,11 +3,11 @@
 }
 
 /* Navigation */
-.navigation {
+nav {
     background-color: red;
 }
 
-.navigation a {
+nav a {
     color:bisque;
 }
 
@@ -21,7 +21,7 @@
 }
 
 /* Body */
-.content {
+body {
     background: linear-gradient(-45deg, #35577D, #141E30);
 }
 
@@ -30,7 +30,7 @@ p {
     color: #fff;
 }
 
-.content .header_title {
+body .header_title {
     text-align: center;
 }
 
@@ -51,7 +51,7 @@ a:hover {
     color: darkorange;
 }
 
-div.heading-background h2 {
+body h2.heading-background {
     background-color: maroon;
 }
 
